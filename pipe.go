@@ -6,7 +6,7 @@ import (
 	"os/exec"
 )
 
-// Command is a os/exec.Commnad wrapper for UNIX pipe
+// Command is an os/exec.Command wrapper for UNIX pipe
 func Command(stdout *bytes.Buffer, stack ...*exec.Cmd) (err error) {
 	var stderr bytes.Buffer
 	pipeStack := make([]*io.PipeWriter, len(stack)-1)

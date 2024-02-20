@@ -16,7 +16,7 @@ How to pipe several commands? ...such as `ls ~/Download | grep Vim`. Use this pa
 
 2. Put something like this in your `~/.bashrc` or `~/.zshrc`:
 
-	```go
+```go
 import "github.com/b4b4r07/go-pipe"
 ```
 
